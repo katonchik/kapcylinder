@@ -1,0 +1,33 @@
+#left {
+  width: 0; }
+
+#center {
+  padding-top: 110px; }
+
+aside {
+  padding-top: 110px;
+  width: 30%;
+  min-width: 420px; }
+
+body {
+  font-size: medium; }
+
+#mainblock h4, #mainblock h5 {
+  font-size: medium; }
+
+label {
+  font-size: medium; }
+
+textarea {
+  font-size: medium; }
+
+input[type="submit"] {
+  font-size: medium; }
+
+div.orgnewsitem div.newsdate {
+  font-size: medium; }
+
+.players th {
+  font-size: medium; }
+
+/*# sourceMappingURL=narrow.css.map */

@@ -1,0 +1,47 @@
+$fontSize: larger;
+$columnPaddingTop: 40px;
+$leftColWidth: 350px;
+$asideWidth: 30%;
+$asideMinWidth: 490px;
+
+#left {
+  width: $leftColWidth;
+}
+
+#center {
+  padding-top: $columnPaddingTop;
+}
+
+aside {
+  padding-top: $columnPaddingTop;
+  width: $asideWidth;
+  min-width: $asideMinWidth;
+}
+
+body {
+  font-size: $fontSize;
+}
+
+#mainblock h4, #mainblock h5 {
+  font-size: $fontSize;
+}
+
+label {
+  font-size: $fontSize;
+}
+
+textarea {
+  font-size: $fontSize;
+}
+
+input[type="submit"] {
+  font-size: $fontSize;
+}
+
+div.orgnewsitem div.newsdate {
+  font-size: $fontSize;
+}
+
+.players th {
+  font-size: $fontSize;
+}

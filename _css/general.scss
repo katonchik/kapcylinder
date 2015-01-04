@@ -1,0 +1,116 @@
+$headerHeight: 60px;
+$footerHeight: 30px;
+$minContentHeight: 460px;
+$menuHeight: 30px;
+
+@import url("layout.css");
+
+body {
+  max-width: 1920px;
+  min-width: 999px;
+  background-color: #FFFFFF;
+}
+
+header {
+	height: $headerHeight;
+	margin-bottom: -$headerHeight;
+	background-color: #6c0103;
+}
+
+main {
+  margin-top: $headerHeight;
+  padding-bottom: $footerHeight;
+  background: url(../images/k14_body_bg.png) repeat-x;
+}
+
+main a {
+  color: #8f200a;
+  text-decoration: underline;
+}
+
+#content {
+  min-height: $minContentHeight;
+  background: url(../images/k14_content_bg.png) no-repeat;
+}
+
+footer {
+  height: $footerHeight;
+  margin-top: -$footerHeight; /* negative value of footer height */
+  background-color: #CE5856;
+}
+
+footer p{
+  font-size: small;
+  line-height: $footerHeight;
+  text-align: center;
+  margin: 0;
+}
+
+footer a {
+  color: black;
+}
+
+#left {
+}
+
+/*
+#center {
+  min-height: $minContentHeight - $columnPaddingTop;
+}
+*/
+
+aside {
+}
+
+div#profile_menu {
+  float: right;
+  padding-top: 20px;
+  margin-right: 20px;
+  text-align: right;
+  font-weight: normal;
+  color: #F7E6D4;
+  margin-bottom: -10px; 
+}
+
+nav {
+  padding: ($headerHeight - $menuHeight)/2 20px;
+  color: #F7E6D4;
+  line-height: $menuHeight;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: inherit;
+}
+
+nav a:hover {
+  color: #CE5856;
+}
+
+div#profile_menu a {
+	color: inherit;
+}
+
+.infobox
+{
+	background-color: #E8A083;
+	opacity: 0.9;
+	padding: 30px;
+	margin: 10px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+div#mainblock,
+div#mainblock-index{
+	height: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+#playerlist{
+  min-width: 600px;
+}

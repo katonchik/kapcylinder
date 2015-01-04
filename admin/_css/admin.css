@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 11pt;
+  font-family: tahoma, arial, verdana, sans-serif; }
+
+div#wrapper {
+  margin-bottom: -22px;
+  min-height: 100%; }
+
+#div#wrapper:after {
+  content: "";
+  display: block;
+  height: 22px; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  font-size: 9px;
+  background-color: #FFFFFF;
+  height: 22px; }
+
+footer:after {
+  height: 22px; }
+
+header {
+  background-color: #0071b2;
+  padding: 20px; }
+
+main {
+  padding: 20px; }
+
+nav {
+  color: #fff; }
+
+nav a {
+  text-decoration: none;
+  color: #fff; }
+
+div#errorMsg {
+  padding: 15px;
+  color: red; }
+
+div#successMsg {
+  padding: 15px;
+  color: green; }
+
+table.listing {
+  border-collapse: collapse; }
+
+table.listing tr.haspaid {
+  background-color: #DDFFDD; }
+
+table.listing tr.notpaid {
+  background-color: #FFDDDD; }
+
+table.listing td, table.listing th {
+  padding: 0 5px;
+  border: 1px solid #DAE1E8; }
+
+table.listing td img {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+table.listing th {
+  background-color: #F7F7F7; }
+
+table.listing tr:hover {
+  background: #F7F7F7; }
+
+div.basket_controls,
+div.participation_controls {
+  display: none; }
+
+textarea#general_info {
+  width: 950px;
+  height: 600px; }
+
+textarea#email_body {
+  width: 700px;
+  height: 200px; }
+
+div#player_photo {
+  float: right;
+  width: 300px;
+  margin: 5px 30px;
+  text-align: right; }
+
+div#player_photo img {
+  max-width: 300px; }
+
+table.listing tr.inactive {
+  color: gray; }
+
+table.listing tr.active {
+  font-weight: normal; }
+
+td.news_text {
+  max-width: 800px; }
+
+#css_content {
+  width: 900px;
+  height: 600px; }
+
+#log td {
+  padding-left: 20px; }
+
+.Maybe {
+  color: #999999; }
+
+.Maybe a {
+  color: #9999FF; }
+
+.No {
+  color: #CCCCCC; }
+
+.No a {
+  color: #CCCCFF; }
+
+div.frontend_team {
+  float: left;
+  background-color: #CCCCEE;
+  font-family: Arial, sans-serif;
+  padding: 7px 20px;
+  margin: 20px 15px 5px 5px;
+  /*width: 18%;*/
+  width: 195px;
+  height: 150px;
+  /* Tournament-specific, for 7 players on team */
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px; }
+
+div.frontend_team h3 {
+  margin-top: 0;
+  color: #000;
+  padding-bottom: 5px; }
+
+div.frontend_team ol,
+div.frontend_team ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+div.frontend_team ul li {
+  list-style-type: none;
+  margin-bottom: 3px;
+  padding: 0 2px 0 7px;
+  color: #333;
+  font-size: smaller; }
+
+div.frontend_team ol li {
+  font-size: smaller;
+  margin-bottom: 3px;
+  padding: 0 2px 0 7px;
+  margin-left: 15px; }
+
+.team {
+  float: left;
+  font-family: Arial, sans-serif;
+  padding: 7px 20px;
+  margin: 20px 15px 5px 5px;
+  width: 150px;
+  height: 150px;
+  /* Tournament-specific, for 7 players on team */
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px; }
+  .team__link {
+    text-align: right; }
+
+.basket {
+  background-color: #CCCCEE; }
+
+.hat-team {
+  background-color: #EECCCC; }
+
+.m a, .f a, a.m, a.f {
+  text-decoration: none; }
+
+.m, .m a, a.m {
+  color: #000074; }
+
+.f, .f a, a.f {
+  color: #611a1a; }
+
+.player-link {
+  vertical-align: baseline; }
+  .player-link img {
+    vertical-align: top; }
+
+.hilite1 {
+  font-weight: bold; }
+
+.hilite2 {
+  font-weight: bold;
+  color: red; }
+
+.hilite3 {
+  font-weight: bold;
+  color: red;
+  font-size: large; }
+
+.hilite4 {
+  font-weight: bold;
+  color: red;
+  font-size: larger; }
+
+.playerSearch {
+  width: 100%;
+  height: 33px;
+  /*	margin-right: 15px;*/
+  position: relative;
+  text-align: right; }
+  .playerSearch__name {
+    width: 200px;
+    position: absolute;
+    top: 8px;
+    right: 50px; }
+  .playerSearch__bttn {
+    position: absolute;
+    right: 5px;
+    /*	  margin-left: 208px;*/ }
+
+.cropper {
+  position: relative;
+  width: 400px;
+  height: 460px;
+  float: right;
+  margin: 20px; }
+  .cropper .imageBox {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .cropper__actions {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    bottom: 10px;
+    right: 0; }
+  .cropper__thumbContainer {
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    height: 50px;
+    width: 50px; }
+  .cropper__thumbControls {
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+    height: 50px;
+    width: 70px; }
+
+/*# sourceMappingURL=admin.css.map */

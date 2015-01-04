@@ -1,0 +1,440 @@
+body {
+  font-family: Calibri, Arial, sans-serif; }
+
+.infobox {
+  background-color: #E8A083;
+  opacity: 0.9;
+  padding: 30px;
+  margin: 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+
+/*index page*/
+#mainblock {
+  color: #000; }
+
+#mainblock p {
+  margin: 0; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 5px;
+  margin-right: 3px; }
+
+input[type="text"] {
+  font-size: normal; }
+
+input[type="submit"], input[type="button"] {
+  display: block;
+  /*take own line */
+  padding: 10px 15px;
+  margin: 25px auto;
+  color: #fff;
+  background-color: #CE5856;
+  border: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+
+input[type="button"] {
+  display: inline;
+  margin: -10px 10px 0;
+  padding: 3px 10px; }
+
+div.orgnewsitem {
+  padding: 10px 0; }
+
+div.autonewsitem {
+  padding-bottom: 5px; }
+
+div.orgnewsitem div.newsdate {
+  color: #C13F29;
+  border-bottom: 1px #fff dotted;
+  text-align: left; }
+
+div.autonewsitem div.newsdate {
+  color: #C13F29;
+  font-weight: bold;
+  display: inline; }
+
+div.orgnewsitem div.newstext {
+  padding: 5px 0;
+  color: #48160E;
+  font-size: 100%; }
+
+div.autonewsitem div.newstext {
+  padding: 0;
+  color: #48160E;
+  display: inline; }
+
+div.autonewsitem div.newstext a,
+div.orgnewsitem div.newstext a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold; }
+
+div.orgnewsitem span.link {
+  white-space: nowrap; }
+
+#orgnews_link a,
+#autonews_link a {
+  color: #48160E;
+  text-decoration: underline;
+  font-weight: bold; }
+
+#newsblock hr {
+  border: 0;
+  border-bottom: 1px dotted #fff; }
+
+div#profile_menu {
+  color: #fff;
+  float: right; }
+
+div#profile_menu a {
+  padding: 5px 15px;
+  clear: right;
+  color: #fff;
+  font-weight: normal;
+  margin-left: 5px;
+  text-align: center;
+  background-color: #000;
+  overflow: hidden;
+  width: 150px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px; }
+
+/* OTHER */
+.message, div#errorMsg, div#successMsg, div#waitMsg {
+  padding: 15px;
+  background-color: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px; }
+
+div#errorMsg {
+  color: red; }
+
+div#successMsg {
+  color: #4F8A10; }
+
+div#waitMsg {
+  color: #9F6000; }
+
+div#city {
+  display: none; }
+
+div.frontend_team {
+  float: left;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 7px 20px;
+  margin: 20px 15px 5px 5px;
+  /*width: 18%;*/
+  width: 195px;
+  min-height: 250px;
+  /* Tournament-specific, for 7 players on team */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+
+div.frontend_team h3 {
+  margin-top: 0;
+  color: #000; }
+
+div.frontend_team ol,
+div.frontend_team ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+div.frontend_team ul li {
+  list-style-type: none;
+  margin-bottom: 3px;
+  padding: 0 2px 0 7px;
+  color: #333;
+  font-size: smaller; }
+
+div.frontend_team ol li {
+  font-size: smaller;
+  margin-bottom: 3px;
+  padding: 0 2px 0 7px;
+  margin-left: 15px; }
+
+div.frontend_team ul li.f a {
+  color: #CE5856; }
+
+#basket_page .f {
+  background-color: #FDD; }
+
+#basket_page .m {
+  background-color: #DDF; }
+
+/* .frontend_team*/
+.players .f a {
+  color: #C13F29; }
+
+.players .f a:hover {
+  text-decoration: underline; }
+
+div.frontend_team p.team_color {
+  font-size: smaller;
+  font-style: italic;
+  margin-top: -22px;
+  color: #CE5856; }
+
+/*	PLAYERLIST PAGE */
+table.players {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0; }
+
+.players td, th {
+  padding: 0 9px 15px;
+  /*margin: 1px 20px 1px 1px;*/ }
+
+.players th {
+  color: #48160E;
+  text-align: left;
+  padding: 10px 9px 15px; }
+
+.players th.sex {
+  width: 10%;
+  text-align: center; }
+
+.players td {
+  line-height: 90%; }
+
+.players img {
+  margin: 5px auto;
+  vertical-align: middle; }
+
+.players .num {
+  width: 4%;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 10px; }
+
+.players .name {
+  /*width: 37%;*/ }
+
+.players .club,
+.players .city,
+.players .status {
+  width: 15%; }
+
+.players .club {
+  min-width: 90px; }
+
+.players .t-shirt {
+  white-space: nowrap;
+  font-weight: bold;
+  color: #999; }
+
+.players .t-shirt span {
+  margin-top: 20px; }
+
+.players .tshirt-paid {
+  color: #991A05; }
+
+.players .tshirt-unpaid {
+  color: #666; }
+
+.players td a.delete {
+  font-size: large;
+  color: red;
+  text-decoration: none; }
+
+.players td.listname {
+  border: 0; }
+
+.players .playername {
+  font-weight: bold; }
+
+.players .playername-f {
+  font-weight: bold;
+  color: #CE5856; }
+
+.color-paid {
+  color: #991A05; }
+
+.color-not-paid {
+  color: #666; }
+
+img.avatar {
+  width: 50px;
+  height: 50px;
+  clip: rect(0px, 50px, 50px, 0px);
+  border-radius: 100%; }
+
+/*	REGISTRATION PAGE */
+/*
+#errorMsg {
+  border-left:  #ff0000 20px solid;
+  border-top: #ccc 1px dotted;
+  border-bottom: #ccc 1px dotted;
+  padding: 10px;
+  margin: 25px 5px;
+  font-size: 90%;
+  color: red;}
+*/
+#regform {
+  margin: 0 auto 20px;
+  width: 100%; }
+
+#regform p {
+  margin-top: 15px; }
+
+#regform label {
+  display: block;
+  float: left;
+  width: 40%;
+  min-width: 130px; }
+
+#regform input[type="submit"], #regform input[type="button"] {
+  width: 35%; }
+
+#org_inputs {
+  overflow: auto;
+  width: 58%;
+  min-width: 230px; }
+
+#org_quest {
+  float: right;
+  width: 35%;
+  padding: 8px 15px;
+  background-color: #CE5856;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+
+#org_quest a {
+  color: #fff;
+  border-bottom: 1px #fff dotted; }
+
+.hosting {
+  font-size: 80%;
+  margin: 20px 0 30px; }
+
+#regform small {
+  color: #999; }
+
+#Team_name {
+  display: none;
+  font-size: 90%;
+  color: #CE5856; }
+
+/*	HOME PAGE */
+#player_name {
+  font-size: larger;
+  font-weight: bold; }
+
+div.blockname {
+  background-color: #E9EDF1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 518px;
+  color: #48160E;
+  font-weight: bold;
+  font-size: larger;
+  padding: 5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px; }
+
+span.vbutton {
+  display: inline;
+  background-color: #48160E;
+  padding: 5px;
+  margin-right: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  color: #FFF; }
+
+.choosed span.vbutton {
+  background-color: #C13F29;
+  cursor: text;
+  color: #FFF; }
+
+span.orange {
+  background-color: #C13F29;
+  color: #fff;
+  padding: auto 20px; }
+
+div#question_participation a,
+div#question_division a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+a .vbutton {
+  padding: 5px 15px;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #FFF; }
+
+div#question_participation .answer,
+div#question_tshirt .answer,
+div#question_division .answer {
+  margin-top: 25px; }
+
+p.question {
+  margin-bottom: 5px; }
+
+div.note {
+  font-style: italic;
+  font-size: medium;
+  padding: 10px; }
+
+div.preference select {
+  width: 518px; }
+
+#player_photo {
+  background-color: #fff;
+  padding: 5px;
+  margin-right: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px; }
+
+div#account_links ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+div#account_links ul li {
+  list-style-type: none;
+  font-weight: normal; }
+
+div#account_links ul li a {
+  color: #fff;
+  border-bottom: 1px #fff dotted; }
+
+div#player_photo img {
+  max-width: 200px; }
+
+hr {
+  margin: 0 0 5px 0; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
+
+/*# sourceMappingURL=default.css.map */

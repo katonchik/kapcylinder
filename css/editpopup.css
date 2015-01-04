@@ -1,0 +1,26 @@
+.lightbox{
+    display: block;
+    visibility: hidden;
+    position:absolute;
+    background:#FFF;
+    border:1px solid #3c3c3c;
+    color:black;
+    z-index:100;
+    padding:20px;
+    top:0;
+    width: 400px;
+}
+
+.active
+{
+    visibility: visible;
+}
+
+.dimmer{
+    background: #000;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    z-index:99;
+}
+

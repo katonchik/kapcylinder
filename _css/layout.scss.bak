@@ -1,0 +1,59 @@
+/**
+* This file is required to make sure that the header, footer and columns are properly positioned.
+* Don't change this file.  Please change only general.scss
+*/
+
+* {margin:0;padding:0;}
+
+html, body {height: 100%;}
+
+#wrapper{
+  min-height: 100%;
+}
+
+main {
+  overflow:auto;
+}
+
+footer {
+  position: relative;
+  clear:both;
+}
+
+
+
+/* Stuff inside main */
+
+#left {
+  float: left;
+}
+
+#center {
+  overflow: hidden; /*to contain in between left and right columns */
+}
+
+#right {
+  float: right;
+}
+
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/

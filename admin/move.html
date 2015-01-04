@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title></title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+  $(function(){
+	$("#move").click(function(){
+		moveAnimate('#element1', '#container2');
+	});
+  });
+  
+  function moveAnimate(element, newParent){
+        element = $(element); //Allow passing in either a JQuery object or selector
+        newParent= $(newParent); //Allow passing in either a JQuery object or selector
+        var oldOffset = element.offset();
+        element.appendTo(newParent);
+        var newOffset = element.offset();
+
+        var temp = element.clone().appendTo('body');
+        temp    .css('position', 'absolute')
+                .css('left', oldOffset.left)
+                .css('top', oldOffset.top)
+                .css('zIndex', 1000);
+        element.hide();
+        temp.animate( {'top': newOffset.top, 'left':newOffset.left}, 'slow', function(){
+           element.show();
+           temp.remove();
+        });
+    }
+</script>
+
+</head>
+
+<body>
+<div id="container1" style="width: 100px; height: 100px; background-color: pink; float: left;">
+	<div id="element1" style = "width: 30px; height: 30px; background-color: black;"></div>
+</div>
+<div id="container2" style="width: 100px; height: 100px; background-color: yellow; float: right;"></div>
+<input type="button" id="move" value="Move" />
+</body>
+
+</html>

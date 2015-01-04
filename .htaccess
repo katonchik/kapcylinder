@@ -1,0 +1,20 @@
+<FilesMatch "\.(?i:lang)$">
+  Header set Content-Disposition attachment
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+# enable rewrite engine
+RewriteEngine On
+
+# if requested url does not exist pass it as path info to index.php
+RewriteRule ^$ index.php?/ [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.php?params=$1
+
+RewriteCond %{REQUEST_URI} ^((?!/admin/).)*$
+RewriteCond %{REQUEST_URI} ^((?!/ajax).)*$
+RewriteCond %{REQUEST_URI} .*\.php.*
+RewriteRule (.*) index.php
+
+</IfModule>

@@ -1,0 +1,48 @@
+#taskManger{
+  overflow: hidden;
+}
+
+#taskList
+{
+  width: 700px;
+  height: 150px;
+  margin: 10px;
+}
+
+#activeList
+{
+  @extend #taskList;
+  background-color: #AAAAAA;
+}
+
+#completedList
+{
+  @extend #taskList;
+  background-color: #CCCCCC;
+}
+
+.task{
+  padding: 2px;
+  width: 660px;
+  background-color: #999999;
+  margin: 2px;
+  float: left;
+}
+
+.taskName{
+  float: left;
+  width: 400px;
+  background-color: #DD9999;
+}
+
+.responsible{
+  float: left;
+  width: 100px;
+  background-color: #99DD99;
+}
+
+.checkCompleted{
+  float: left;
+  width: 50px;
+  background-color: #9999DD;
+}

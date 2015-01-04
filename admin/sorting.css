@@ -1,0 +1,68 @@
+	div#global
+	{
+		height: 650px;
+		min-width: 990px;
+	}
+
+	div#teambar
+	{
+		width: 75%;
+		margin-left: 10px;
+		float: left;
+		padding-top: 0px;
+	}
+
+	div.team_outer
+	{
+		float: left;
+	}
+
+	ul.team
+	{
+		background-color: #EEEEEE;
+		height: 180px;
+		position: relative;
+		padding: 3px 3px;
+		margin: 0 10px 20px 0;
+		width: 210px;
+	}
+
+	ul#t0
+	{
+		height: 500px;
+		width: 20%;
+		margin: 0 0px;
+		min-width: 210px;
+	}
+
+	div.teamname
+	{
+		font: 11px Arial;
+		font-weight: bold;
+	}
+	
+	li.player
+	{
+		background-color: #AAAAAA;
+		margin: 2px;
+		width: 200px;
+		font: 10px Arial;
+		padding: 0 3px;
+		list-style-type: none;
+	}
+
+	li.f
+	{
+		background-color: #EEAAAA;		
+	}
+
+	li.m
+	{
+		background-color: #AAAAEE;		
+	}
+
+	div#global form
+	{
+		width: 200px;
+		margin:5px;
+	}

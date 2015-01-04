@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+$cellSize : 80px;
+$cellPadding : 5px;
+$cellMargin : 1px;
+$titleHeight: 20px;
+$titleMarginBottom: 10px;
+$calendarPadding: 20px;
+
+.calendar {
+  width: 7 * ($cellSize + 2 * $cellMargin);
+  margin: auto;
+  overflow: hidden;
+  background: #DDDDDD;
+  padding: $calendarPadding;
+  font: 12pt "PT Sans";
+  height: 6 * ($cellSize + 2 * $cellMargin) + $titleHeight + $titleMarginBottom;
+
+  &__monthTitle {
+    width: 80%;
+    text-align: center;
+    float: left;
+    margin-bottom: $titleMarginBottom;
+    height: $titleHeight;
+  }
+
+  &__scrollControl {
+    width: 10%;
+    text-align: center;
+    float: left;
+    margin-bottom: $titleMarginBottom;
+    height: $titleHeight;
+    cursor: pointer;
+  }
+
+  &__cell {
+    float: left;
+    height:$cellSize - $cellPadding * 2;
+    width: $cellSize - $cellPadding * 2;
+    margin: $cellMargin;
+    padding: $cellPadding;
+    font: 10pt "PT Sans";
+
+    &--empty {
+      background: #EEE;
+    }
+
+    &--weekday {
+      background: #FFFFFF;
+    }
+
+    &--weekend {
+      background: #ff9999;
+      cursor: pointer;
+    }
+
+    &--unavailable {
+      background: #ff6666;
+      cursor: pointer;
+    }
+
+
+  }
+}
